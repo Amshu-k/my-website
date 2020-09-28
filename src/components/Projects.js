@@ -16,7 +16,7 @@ import Navbar from './Navbar';
 const useStyles = makeStyles({
     mainContainer: {
         background: '#233',
-        height: '100%'
+        height: '100vh'
     },
     cardContainer: {
         maxWidth: 345,

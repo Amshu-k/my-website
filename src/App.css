@@ -4,5 +4,7 @@ body {
   -moz-background: cover;
   -o-background: cover;
   background: cover;
-  background-size: 100% 100%; 
+  background-size: 100% 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }

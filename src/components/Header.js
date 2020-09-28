@@ -64,7 +64,7 @@ const Header = () => {
                 />
             </Typography>
             <Typography variant="h5">
-                <a target="_blank" rel="noopener noreferrer" href="https://1drv.ms/w/s!ApDaAs1Vh3Xy_FH6x0MXr2KL-pSs?e=y7Bezv" className={classes.anchor}>My resume</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://1drv.ms/w/s!ApDaAs1Vh3Xy_FH6x0MXr2KL-pSs?e=EKQDZd" className={classes.anchor}>My resume</a>
             </Typography>
 
         </Box>
