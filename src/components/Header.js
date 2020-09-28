@@ -34,6 +34,9 @@ const useStyles = makeStyles(theme => ({
     },
     listItem: {
         color: 'tan'
+    },
+    anchor: {
+        color: 'white'
     }
 }))
 
@@ -42,15 +45,16 @@ const Header = () => {
     return (
         <Box className={classes.typedContainer}>
             <Grid container justify='center'>
-                <Avatar className={classes.avatar} src={avatar} alt="Amshu" />
+                <Avatar className={classes.avatar} style={{ width: '240px', height: '240px' }} src={avatar} alt="Amshu" />
             </Grid>
             <Typography className={classes.title} variant="h6">
                 <Typed
                     strings={['Amshuman Krishnamurthy']}
                     typeSpeed={40}
+
                 />
             </Typography>
-            <br/>
+            <br />
             <Typography variant="h5" className={classes.subtitle}>
                 <Typed
                     strings={['Frontend Engineering', 'Angular', 'React', 'Node.js']}
@@ -59,6 +63,10 @@ const Header = () => {
                     loop
                 />
             </Typography>
+            <Typography variant="h5">
+                <a target="_blank" rel="noopener noreferrer" href="https://1drv.ms/w/s!ApDaAs1Vh3Xy_FH6x0MXr2KL-pSs?e=y7Bezv" className={classes.anchor}>My resume</a>
+            </Typography>
+
         </Box>
     )
 }

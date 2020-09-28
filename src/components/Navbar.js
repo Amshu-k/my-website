@@ -17,12 +17,14 @@ import {
 } from '@material-ui/core';
 import {
     ArrowBack,
+    MenuOpen,
     AssignmentInd,
     Home,
     Apps,
     ContactMail,
 } from '@material-ui/icons'
 import avatar from '../avatar.png';
+import Projects from './Projects';
 
 const useStyles = makeStyles(theme => ({
     menuSliderContainer: {
@@ -48,19 +50,14 @@ const menuItems = [
         listPath: '/'
     },
     {
-        listIcon: <AssignmentInd />,
-        listText: 'Resume',
-        listPath: '/resume'
-    },
-    {
         listIcon: <Apps />,
-        listText: 'Portfolio',
-        listPath: '/resume'
+        listText: 'Projects',
+        listPath: '/projects'
     },
     {
         listIcon: <ContactMail />,
         listText: 'Contact',
-        listPath: '/resume'
+        listPath: '/contact'
     }
 ]
 
@@ -99,11 +96,11 @@ const Navbar = () => {
                 <AppBar position='static' style={{ background: '#222' }}>
                     <Toolbar>
                         <IconButton onClick={toggleSlider('right', true)}>
-                            <ArrowBack style={{ color: 'tomato' }} />
+                            <MenuOpen style={{ color: 'tomato' }} />
                         </IconButton>
-                        <Typography variant='h5' style={{ color: 'tan' }}>
-                            Hello
-                    </Typography>
+                        {/* <Typography variant='h5' style={{ color: 'tan' }}>
+                            Welcome
+                    </Typography> */}
                         <MobileRightMenuSlider
                             anchor="left"
                             open={hideSideMenu.right}
