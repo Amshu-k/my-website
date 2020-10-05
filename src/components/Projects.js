@@ -66,6 +66,37 @@ const Projects = () => {
                         <CardActionArea>
                             <CardContent>
                                 <Typography gutterBottom variant='h5'>
+                                    Newsvoice
+                                </Typography>
+                                <Typography variant='body2' color='textSecondary' component='p'>
+                                    Voice controlled React.js news application using Alan AI for voice commands and Material-UI for design.
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size='small' color='primary'>
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/Amshu-k/newsvoice">
+                                    GitHub
+                                    </a>
+                            </Button>
+                            <Button size='small' color='primary'>
+                                <a
+                                    target="_blank"
+                                    href="https://newsvoicee.web.app/">
+                                    View Project
+                                    </a>
+                            </Button>
+                        </CardActions>
+
+                    </Card>
+                </Grid>
+                <Grid item xs={12} sm={8} md={6}>
+                    <Card className={classes.cardContainer}>
+                        <CardActionArea>
+                            <CardContent>
+                                <Typography gutterBottom variant='h5'>
                                     Covid-19 Tracker
                                 </Typography>
                                 <Typography variant='body2' color='textSecondary' component='p'>
